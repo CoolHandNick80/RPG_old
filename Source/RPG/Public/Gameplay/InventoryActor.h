@@ -16,8 +16,6 @@ class RPG_API AInventoryActor : public AStaticMeshActor
 		
 public:
 	AInventoryActor();
-	virtual void PickUp();
-	virtual void PutDown(FTransform TargetLocation);
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 		TSubclassOf<AInventoryActor> ActorClass = nullptr;
